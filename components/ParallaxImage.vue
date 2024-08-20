@@ -2,7 +2,7 @@
   <Section width="w-full">
     <img
       ref="parallaxImage"
-      class="aspect-square object-cover w-full h-full"
+      class="aspect-square object-cover w-full h-96"
       src="~/assets/images/laptop.jpg"
       sizes="100vw sm:50vw md:400px"
     />
@@ -15,22 +15,16 @@ import { gsap } from "~/plugins/gsap.client";
 const parallaxImage = ref(null);
 
 onMounted(() => {
-  const parts = document.querySelectorAll(".word, .space");
-  gsap.set(parts, { color: "black" });
-
-  gsap.to(parts, {
-    scrollTrigger: {
-      trigger: ".intro-text",
-      start: "top 80%",
-      end: "bottom 50%",
-      scrub: true,
-    },
-    color: "grey",
-    stagger: {
-      each: 0.1,
-      from: "start",
-    },
-    duration: 1,
-  });
+  if (parallaxImage.value) {
+    gsap.to(parallaxImage.value, {
+      y: -50,
+      scrollTrigger: {
+        trigger: parallaxImage.value,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }
 });
 </script>

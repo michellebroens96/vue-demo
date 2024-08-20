@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import imageSrc from "~/assets/images/laptop.jpg";
+import imageSrc from "~/assets/images/code.jpg";
 import Section from "~/components/layout/Section.vue";
 import Typography from "./partials/Typography.vue";
 
