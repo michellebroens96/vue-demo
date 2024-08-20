@@ -1,12 +1,10 @@
 <template>
-  <Section>
-    <div
-      :style="[
-        imageExists
-          ? { backgroundImage: `url(${imageSrc})` }
-          : { backgroundColor: 'black' },
-      ]"
-      class="bg-cover bg-center h-9/12"
+  <Section width="w-full">
+    <HeaderImage
+      :image-src="imageSrc"
+      width="w-12/12 md:w-8/12"
+      swoosh-bottom
+      class="pt-32"
     >
       <div
         class="flex flex-col justify-center h-full items-center text-center gap-8"
@@ -15,7 +13,7 @@
           Michelle Broens website
         </Typography>
       </div>
-    </div>
+    </HeaderImage>
   </Section>
 </template>
 
@@ -24,6 +22,7 @@ import { ref, onMounted } from "vue";
 import imageSrc from "~/assets/images/code.jpg";
 import Section from "~/components/layout/Section.vue";
 import Typography from "./partials/Typography.vue";
+import HeaderImage from "./partials/HeaderImage.vue";
 
 const imageExists = ref(false);
 

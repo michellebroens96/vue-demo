@@ -42,7 +42,7 @@ onMounted(() => {
       end: "bottom 50%",
       scrub: true,
     },
-    color: "grey",
+    color: "#7f1d1d",
     stagger: {
       each: 0.1,
       from: "start",

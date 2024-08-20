@@ -14,6 +14,7 @@
         <li><a href="#" class="hover:underline">About</a></li>
         <li><a href="#" class="hover:underline">Services</a></li>
         <li><a href="#" class="hover:underline">Contact</a></li>
+        <li><DarkModeToggle /></li>
       </ul>
     </nav>
   </div>

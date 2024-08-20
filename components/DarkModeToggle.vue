@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { useDarkModeStore } from "/stores/darkModeStore";
+import { useDarkModeStore } from "~/stores/darkModeStore";
 import { computed } from "vue";
 
 const darkModeStore = useDarkModeStore();

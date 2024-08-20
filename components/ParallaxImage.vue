@@ -1,8 +1,8 @@
 <template>
-  <Section width="w-full">
+  <Section width="w-9/12">
     <img
       ref="parallaxImage"
-      class="aspect-square object-cover w-full h-96"
+      class="aspect-square rounded-lg object-cover w-full h-96"
       src="~/assets/images/laptop.jpg"
       sizes="100vw sm:50vw md:400px"
     />
