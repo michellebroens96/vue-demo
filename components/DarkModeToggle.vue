@@ -24,7 +24,7 @@ import { computed } from "vue";
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed({
   get: () => darkModeStore.isDarkMode,
-  set: (value) => darkModeStore.toggleDarkMode(),
+  set: () => darkModeStore.toggleDarkMode(),
 });
 
 const toggleDarkMode = () => {
