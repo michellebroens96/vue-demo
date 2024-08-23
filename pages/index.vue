@@ -1,8 +1,10 @@
 <template>
-  <Header />
-  <ParallaxImage />
-  <Introduction />
-  <DoubleImage />
+  <div class="dark:bg-slate-700">
+    <Header />
+    <ParallaxImage />
+    <Introduction />
+    <DoubleImage />
+  </div>
 </template>
 <script lang="ts">
 import Header from "~/components/Header.vue";

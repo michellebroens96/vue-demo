@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="m-8">
+    <div class="m-8 dark:bg-slate-700">
       <h1 class="text-5xl font-bold text-center text-gray-600">
         {{ error.message }}
       </h1>

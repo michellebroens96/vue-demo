@@ -50,11 +50,11 @@ const sizes = {
 };
 
 const colors = {
-  primary: "text-slate-800",
-  half: "text-slate-500",
-  accent: "text-blue-500",
-  black: "text-black",
-  white: "text-white",
+  primary: "text-slate-800 dark:text-slate-300",
+  half: "text-slate-500 dark:text-slate-100",
+  accent: "text-blue-500 dark:text-blue-300",
+  black: "text-black dark:text-white",
+  white: "text-white dark:text-slate-500",
 };
 
 const tag = computed(() => props.as || "p");

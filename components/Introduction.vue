@@ -31,9 +31,17 @@ const splitText = (text: string) => {
   return text.split(/(\s+)/);
 };
 
+const darkModeStore = useDarkModeStore();
+console.log(darkModeStore.isDarkMode);
+const isDarkMode = computed(() => darkModeStore.isDarkMode);
+
 onMounted(() => {
+  console.log(isDarkMode.value);
+  const color = isDarkMode ? "white" : "black";
+  const targetColor = isDarkMode ? "red" : "#7f1d1d";
+
   const parts = document.querySelectorAll(".word, .space");
-  gsap.set(parts, { color: "black" });
+  gsap.set(parts, { color });
 
   gsap.to(parts, {
     scrollTrigger: {
@@ -42,7 +50,7 @@ onMounted(() => {
       end: "bottom 50%",
       scrub: true,
     },
-    color: "#7f1d1d",
+    color: targetColor,
     stagger: {
       each: 0.1,
       from: "start",

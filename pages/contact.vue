@@ -1,6 +1,6 @@
 <template>
-  <Section>
-    <Typography variant="body">
+  <Section class="dark:bg-slate-700">
+    <Typography variant="body" color="black">
       Hi, my name is Michelle. My passion is cosplay, where I create my own
       costumes and props. This hobby taught me a lot about creative thinking,
       designing patterns and then applying them. As a software engineer I also
@@ -10,7 +10,7 @@
       GSAP. I am also familiar with Node.js, and MySQL. I am always eager to
       learn new technologies and improve my skills.
     </Typography>
-    <Typography variant="body" class="flex">
+    <Typography variant="body" color="black" class="flex">
       My&nbsp;
       <span>
         <NuxtLink to="https://www.linkedin.com/in/michellebroens/">

@@ -16,4 +16,25 @@ const isDarkMode = darkModeStore.isDarkMode;
 const toggleDarkMode = () => {
   darkModeStore.toggleDarkMode();
 };
+
+onMounted(() => {
+  const htmlElement = document.documentElement;
+
+  if (darkModeStore.isDarkMode) {
+    htmlElement.classList.add("dark");
+  } else {
+    htmlElement.classList.remove("dark");
+  }
+
+  watch(
+    () => darkModeStore.isDarkMode,
+    (newVal) => {
+      if (newVal) {
+        htmlElement.classList.add("dark");
+      } else {
+        htmlElement.classList.remove("dark");
+      }
+    }
+  );
+});
 </script>
