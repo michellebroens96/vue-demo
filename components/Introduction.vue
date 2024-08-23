@@ -25,7 +25,7 @@ import Section from "~/components/layout/Section.vue";
 import { gsap } from "~/plugins/gsap.client";
 
 const text =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare tempus mauris, id ultricies nulla lacinia in. Nulla facilisi. Quisque efficitur accumsan ipsum, vel sodales mauris iaculis id. Phasellus at hendrerit elit. Quisque convallis ante magna, eu posuere nisl convallis ac. Suspendisse accumsan faucibus arcu, luctus porta sem cursus eget. Pellentesque maximus gravida finibus. Nulla dictum ullamcorper felis sit amet lobortis. Vestibulum non nibh ut augue porta ornare."; // truncated for brevity
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare tempus mauris, id ultricies nulla lacinia in. Nulla facilisi. Quisque efficitur accumsan ipsum, vel sodales mauris iaculis id. Phasellus at hendrerit elit. Quisque convallis ante magna, eu posuere nisl convallis ac. Suspendisse accumsan faucibus arcu, luctus porta sem cursus eget. Pellentesque maximus gravida finibus. Nulla dictum ullamcorper felis sit amet lobortis. Vestibulum non nibh ut augue porta ornare. Aliquam et libero libero. Integer sed convallis augue. Nulla ut ex laoreet nibh vestibulum viverra. Aliquam ac diam odio. Mauris accumsan, ante ac semper hendrerit, felis dui semper purus, a placerat nulla risus a augue. Sed egestas libero at tortor sodales, a blandit libero consequat. Etiam fringilla cursus est, sed accumsan dolor aliquam at.";
 
 const splitText = (text: string) => {
   return text.split(/(\s+)/);

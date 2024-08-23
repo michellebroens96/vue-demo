@@ -1,10 +1,10 @@
 <template>
   <Section
     width="w-full"
-    class="relative overflow-hidden inset-x-0"
+    class="relative overflow-hidden"
     :class="[
       swooshBottom && 'mask-swoosh-bottom',
-      height ? height : 'min-h-[60vh] lg:min-h-[80vh]',
+      height ? height : 'min-h-[60vh]',
     ]"
   >
     <div

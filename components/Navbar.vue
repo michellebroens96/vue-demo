@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-between p-5 bg-gray-800 dark:bg-gray-100 text-white rounded-b-lg"
+    class="flex items-center justify-between p-5 bg-gray-800 dark:bg-gray-100 text-white rounded-b-lg z-10"
   >
     <div class="flex items-center space-x-3">
       <Typography variant="heading" color="white">
